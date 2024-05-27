@@ -21,6 +21,16 @@ public class WalletRepository {
         walletByUserId.put("Talha", 0.20);
     }
 
+
+
+    public Double withdrawMoney(Double amount, String user) {
+        Double userBalance = walletByUserId.get(user);
+
+        userBalance = userBalance - amount;
+        walletByUserId.put(user, userBalance);
+        return userBalance;
+    }
+
     public Double getMoneyByUserId(String user){
         return walletByUserId.get(user);
     }

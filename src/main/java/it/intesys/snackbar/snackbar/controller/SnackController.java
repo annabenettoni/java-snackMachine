@@ -21,7 +21,6 @@ public class SnackController {
 
     public Boolean orderSnack(@RequestParam("user") String user,
                               @RequestParam("snack") String snack){
-        snackService.orderSnack(user, snack);
         return snackService.orderSnack(user, snack);
     }
 }
