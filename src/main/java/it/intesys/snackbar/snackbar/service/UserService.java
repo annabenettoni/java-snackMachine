@@ -28,6 +28,11 @@ public class UserService {
         if (!userRepository.userExists(user)) {
             throw new IllegalArgumentException("User " + user + " does not exist");
         }
+    }
+
+
+    public Double refillWallet(String user, Double amount){
+        return walletRepository.refillWallet(user, amount);
 
     }
 }

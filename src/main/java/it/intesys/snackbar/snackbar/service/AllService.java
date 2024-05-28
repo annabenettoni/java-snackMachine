@@ -15,18 +15,17 @@ public class AllService {
     private static final Logger log = LoggerFactory.getLogger(AllService.class);
     private final SnackService snackService;
     private final UserService userService;
-    private final WalletRepository walletRepository;
+
 //    private final UserRepository userRepository;
 //    private final WalletRepository walletRepository;
 //    private final SnackRepository snackRepository;
 //    private final PriceRepository priceRepository;
 
     //costruttore
-    public AllService(SnackService snackService, UserService userService, WalletRepository walletRepository){
+    public AllService(SnackService snackService, UserService userService){
         this.snackService = snackService;
         this.userService = userService;
 
-        this.walletRepository = walletRepository;
     }
 
     public Boolean orderSnack(String user, String snack){
@@ -48,7 +47,7 @@ public class AllService {
         userService.withdrawMoney(snackPrice, user);
 
 
-        //scalo i soldi dal wallet dell'utente
+
         //scalo la disponibilità dello snack
         //verifico se lo snack cade
 

@@ -1,1 +1,5 @@
 GET http://localhost:8080/api/order-snack?user=Anna&snack=Mars
+###
+GET http://localhost:8080/api/refill-wallet?user=Anna&money=5.0
+
+
