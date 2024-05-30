@@ -1,5 +1,11 @@
 GET http://localhost:8080/api/order-snack?user=Anna&snack=Mars
 ###
 GET http://localhost:8080/api/refill-wallet?user=Anna&money=5.0
+###
+GET http://localhost:8080/api/refill-snack?snack=Twix&quantity=3
+###
+GET http://localhost:8080/api/add-snack?snack=Kinder%20Bueno&quantity=4&price=2.0
+###
+GET http://localhost:8080/api/change-snack-price?snack=Mars&price=2.0
 
 

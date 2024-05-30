@@ -18,8 +18,19 @@ public class PriceRepository {
         priceBySnackId.put("Kinder Delice", 2.0);
     }
 
+    //ritorna il prezzo di uno snack
     public Double getPriceBySnackId(String snack) {
         return priceBySnackId.get(snack);
+    }
+
+    //permette di aggiugere un nuovo snack con il relativo prezzo
+    public void addNewSnackPrice(String snack, Double price) {
+        priceBySnackId.put(snack, price);
+    }
+
+    //metodo che permette di modificare i prezzi degli snack
+    public void changeSnackPrice(String snack, Double price) {
+        priceBySnackId.put(snack, price);
     }
 
 }

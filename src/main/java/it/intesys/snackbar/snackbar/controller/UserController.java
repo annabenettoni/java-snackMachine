@@ -19,9 +19,8 @@ public class UserController {
 
     @GetMapping("/refill-wallet")
 
-    public Double refillWallet(@RequestParam("user") String user,
+    public void refillWallet(@RequestParam("user") String user,
                                @RequestParam("money") Double money) {
-        return userService.refillWallet(user, money);
+        userService.refillWallet(user, money);
     }
-
 }

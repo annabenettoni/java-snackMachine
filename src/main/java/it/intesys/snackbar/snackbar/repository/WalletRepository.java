@@ -34,11 +34,11 @@ public class WalletRepository {
         return userBalance;
     }
 
-    public Double refillWallet(String user, Double amount) {
+    public void refillWallet(String user, Double amount) {
         Double userBalance = walletByUserId.get(user);
+
         userBalance = userBalance + amount;
         walletByUserId.put(user, userBalance);
-        return userBalance;
     }
 
 }

@@ -23,4 +23,5 @@ public class SnackController {
                               @RequestParam("snack") String snack){
         return allService.orderSnack(user, snack);
     }
+
 }
